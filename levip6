@@ -168,7 +168,7 @@ proxyPw=$(getRandomString)
 fi
 randomIPv6=$(getRandomIPv6 $prefix $ipv6mask)
 setIPv6 $randomIPv6 $ipv6mask
-echo "$proxyUser/$proxyPw/$currentIPv4/$i/$randomIPv6"
+echo "$currentIPv4/$i/$randomIPv6"
 done
 echo $maxPort > $FILE
 }
